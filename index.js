@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import serverless from "serverless-http"
+// import serverless from "serverless-http"
 const app = express();
 const port = 3000;
 
@@ -304,4 +304,4 @@ app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
-export const handler = serverless(app);
+// export const handler = serverless(app);
