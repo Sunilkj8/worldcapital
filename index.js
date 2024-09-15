@@ -265,7 +265,9 @@ let totalCorrect = 0;
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.set('view engine', 'ejs');
+app.set('views', './views'); // Set the directory where your view files are located
+app.set('view engine', 'ejs'); // Set EJS as the templating engine
+
 
 let currentQuestion = {};
 
