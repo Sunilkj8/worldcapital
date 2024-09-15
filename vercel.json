@@ -6,15 +6,8 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
-  ],
   "functions": {
     "index.js": {
-      "runtime": "nodejs14.x",
       "includeFiles": [
         "views/**"
       ]
