@@ -302,4 +302,4 @@ async function nextQuestion() {
 
  
 
-export const handler = serverless(app);
+export default serverless(app);
